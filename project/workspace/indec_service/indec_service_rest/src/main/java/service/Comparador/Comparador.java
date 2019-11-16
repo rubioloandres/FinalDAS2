@@ -45,33 +45,9 @@ public class Comparador {
         calcularTotalesPorSucursal();
         calcularCantidadDeProductosMasBaratosPorSucursal();
         marcarMejoresSucursales();
-        marcarMejoresSucursalesPorMenorTotal();
         completarProductosFaltantes();
     }
 
-    private void marcarMejoresSucursalesPorMenorTotal() {
-
-        List<Double> totales = new LinkedList<Double>();
-
-        for (Cadena c : cadenas) {
-            for (Sucursal sc : c.getSucursales()) {
-               totales.add(sc.getTotal());
-            }
-        }
-
-        Double min = totales.stream().min(naturalOrder()).get();
-
-        for (Cadena c : cadenas) {
-            for (Sucursal sc : c.getSucursales()) {
-                if(sc.getTotal() == min.doubleValue() ){
-                    sc.setMenorPrecioTotal(true);
-                }else{
-                    sc.setMenorPrecioTotal(false);
-                }
-
-            }
-        }
-    }
 
     public List<Cadena> obtenerComparacion(){
         return this.cadenas;

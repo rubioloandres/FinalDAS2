@@ -51,21 +51,8 @@ public class Sucursal {
     @SerializedName("mejorOpcion")
     private boolean mejorOpcion;
 
-    @SerializedName("menorPrecioTotal")
-    private boolean menorPrecioTotal;
-
     @SerializedName("total")
     private double total;
-
-
-
-    public boolean isMenorPrecioTotal() {
-        return menorPrecioTotal;
-    }
-
-    public void setMenorPrecioTotal(boolean menorPrecioTotal) {
-        this.menorPrecioTotal = menorPrecioTotal;
-    }
 
 
     public int getCantidadDeProductosConPrecioMasBajo() {

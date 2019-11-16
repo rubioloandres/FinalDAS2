@@ -8,6 +8,11 @@ services:
         ports:
             - '1434:1433'
         container_name: axis_one
+    axis_two:
+        image: 'mssql_cadena:1.0'
+        ports:
+            - '1440:1433'
+        container_name: axis_two
     rest_one:
         image: 'mssql_cadena:1.0'
         ports:

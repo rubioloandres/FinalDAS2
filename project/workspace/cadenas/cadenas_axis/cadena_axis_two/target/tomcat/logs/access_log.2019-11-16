@@ -1,0 +1,4 @@
+0:0:0:0:0:0:0:1 - - [16/Nov/2019:00:23:47 -0300] "GET /cadena_axis_two/services/CadenaAxisTwo/sucursales?codigoentidadfederal=AR-X&localidad=Capital HTTP/1.1" 200 705 http-bio-8009-exec-1 942
+127.0.0.1 - - [16/Nov/2019:00:38:53 -0300] "GET /cadena_axis_two/services/CadenaAxisTwo?wsdl HTTP/1.1" 200 14567 http-bio-8009-exec-3 1052
+127.0.0.1 - - [16/Nov/2019:00:38:54 -0300] "POST /cadena_axis_two/services/CadenaAxisTwo.CadenaAxisTwoHttpSoap12Endpoint/ HTTP/1.1" 200 865 http-bio-8009-exec-4 133
+127.0.0.1 - - [16/Nov/2019:00:39:17 -0300] "POST /cadena_axis_two/services/CadenaAxisTwo.CadenaAxisTwoHttpSoap12Endpoint/ HTTP/1.1" 200 2929 http-bio-8009-exec-6 1293
